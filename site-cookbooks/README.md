@@ -1,0 +1,1 @@
+This folder contains site specific cookbooks that you manually create.
