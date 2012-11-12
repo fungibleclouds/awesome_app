@@ -13,5 +13,6 @@
 	# uncomment rails Gemfile to enable unicorn and therubyracer
 	# edit .gitignore to ignore /cookbooks and Cheffile.lock and .vagrant
 	vagrant up
-	open [awesome_app](http://33.33.33.10)
+
+open [awesome_app](http://33.33.33.10) to see it running on your vagrant box.
 	
