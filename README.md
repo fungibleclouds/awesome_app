@@ -11,8 +11,8 @@
 	wget https://raw.github.com/fungibleclouds/awesome_app/master/Vagrantfile
 	mkdir site-cookbooks && cd site-cookbooks && touch README.md && cd ..
 	# uncomment rails Gemfile to enable unicorn and therubyracer
-	# edit .gitignore to ignore /cookbooks and Cheffile.lock and .vagrant
-	
+	# add gem 'libv8', '~> 3.11.8' to Gemfile
+	# edit .gitignore to ignore /cookbooks and .vagrant
 	librarian-chef install
 	vagrant up
 

@@ -6,6 +6,7 @@ Vagrant::Config.run do |config|
   config.vm.network :hostonly, "33.33.33.10"                                                                                                                                 
   config.vm.provision :chef_solo do |chef|     
     chef.cookbooks_path = ["cookbooks","site-cookbooks"]
-    chef.add_recipe "rails-lastmile"                                                                                                                                                                                                                                                                                                                                  
-  end                                                                                                                                                                        
+    chef.add_recipe "build-essential" # require to get make
+    chef.add_recipe "rails-lastmile"
+  end                                                                                
 end
