@@ -4,15 +4,12 @@
 
 ### Follow these steps to create a new rails app in vagrant box.
 
-    gem install librarian
-	rails new awesome_app
+	git clone git@github.com:fungibleclouds/awesome_app.git 
+	rails new ./awesome_app
 	cd awesome_app
-	wget https://raw.github.com/fungibleclouds/awesome_app/master/Cheffile
-	wget https://raw.github.com/fungibleclouds/awesome_app/master/Vagrantfile
 	mkdir site-cookbooks && cd site-cookbooks && touch README.md && cd ..
 	# uncomment rails Gemfile to enable unicorn and therubyracer
-	# add gem 'libv8', '~> 3.11.8' to Gemfile
-	# edit .gitignore to ignore /cookbooks and .vagrant
+	# add to Gemfile  gem 'libv8', '~> 3.11.8' 
 	librarian-chef install
 	vagrant up
 
